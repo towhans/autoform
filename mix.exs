@@ -28,13 +28,14 @@ defmodule Autoform.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:phoenix, "~> 1.3.4"},
-      {:phoenix_ecto, "~> 3.2"},
-      {:phoenix_html, "~> 2.10"},
-      {:phoenix_live_reload, "~> 1.0", only: :dev},
-      {:cowboy, "~> 1.0"},
+      {:phoenix, "~> 1.4.10"},
+      {:phoenix_ecto, "~> 4.0"},
+      {:phoenix_html, "~> 2.11"},
+      {:phoenix_live_reload, "~> 1.2", only: :dev},
+      {:cowboy, "~> 2.0"},
       {:gettext, "~> 0.11"},
-      {:fields, git: "https://github.com/dwyl/fields.git", tag: "0.1.7"}
+      {:fields, "~> 2.1.0"},
+      {:poison, "~> 4.0"}
     ]
   end
 end
